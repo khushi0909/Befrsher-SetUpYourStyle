@@ -240,7 +240,7 @@ return (
 
     </div>  
 
-       <div className="shadow-my_shadow rounded-[2rem]  max-w-full sm:hidden 4xl:block md:max-h-full  2xl:max-h-[62.625rem] 4xl:max-h-screen" >
+       <div className="shadow-my_shadow rounded-[2rem]  max-w-full sm:hidden 4xl:block md:max-h-full  2xl:max-h-[47rem] 4xl:max-h-screen" >
         <img className=" h-full rounded-[2rem] lg:object-cover 2xl:object-cover" src={formgirlimage} alt="girlimg"/>
       </div> 
       
