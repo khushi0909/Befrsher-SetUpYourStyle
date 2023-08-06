@@ -8,7 +8,6 @@ import MyTextArea from './CustomTextArea';
 import { date, object } from "yup"
 
 
-
 const initialValues={
   fashionid:"",
   dob:"",
@@ -230,8 +229,8 @@ return (
           </div>
 
 
-          <button type="submit" className=' flex justify-center items-center sm:max-w-full  mt-[0.8rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem] 4xl:max-h-[6.13rem] bg-[#494DA2] text-white 2xl:text-[1.3125rem] 4xl:text-[3rem] 2xl:p-1 4xl:p-8 font-semibold leading-1.31 tracking-tight' >Continue</button>
-          <button type='button' className='flex justify-center items-center sm:max-w-full 2xl:p-1 2xl:mt-[0.69rem] 4xl:mt-12   4xl:max-w-full w-full 2xl:max-h-[3.13rem] 4xl:max-h-[6.13rem] rounded-[2.5rem] bg-[#494DA2] text-white 2xl:text-[1.3125rem]  4xl:text-[3rem] 4xl:p-8 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
+          <button type="submit" className=' flex justify-center items-center sm:max-w-full  mt-[0.8rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem] 4xl:max-h-[6.13rem] bg-[#494DA2] text-white sm1:text-[1.2rem] 2xl:text-[1.3125rem] 4xl:text-[3rem] 2xl:p-1 4xl:p-8 font-semibold leading-1.31 tracking-tight' >Continue</button>
+          <button type='button' className='flex justify-center items-center sm:max-w-full 2xl:p-1 2xl:mt-[0.69rem] 4xl:mt-12   4xl:max-w-full w-full 2xl:max-h-[3.13rem] 4xl:max-h-[6.13rem] rounded-[2.5rem] bg-[#494DA2] text-white 2xl:text-[1.3125rem] sm1:text-[1.2rem] 4xl:text-[3rem] 4xl:p-8 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
 
       </Form>
 
