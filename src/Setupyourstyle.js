@@ -171,7 +171,8 @@ return (
           </div>
 
           <div className='flex md:flex-col mt-[0.8rem] md:mt-2'>
-            <div> 
+            <div className="flex mt-[0.8rem] md:mt-2"> 
+            {/* //added className  */}
             <Field type="checkbox" name="terms" />
                 
                 <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[rgb(72,79,162)] 4xl:text-xl">
@@ -185,13 +186,13 @@ return (
           </div>
 
 
-          <div className='flex mt-[0.8rem] md:mt-2'>
+          <div className='flex mt-[0.8rem] md:mt-2 '>
           <Field type="checkbox" name="promomsg"  />
 
-                <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[#484FA2] 4xl:text-xl ">
+                <label className="sm1:tracking-tighter  sm1:text-left ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[#484FA2] 4xl:text-xl ">
                 Get Promotional messages through whatsapp 
                 </label>
-
+{/* //sm1 tracking and textleft added */}
           </div>
 
           <button type="submit" className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full  mt-[0.8rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem] 4xl:max-h-[6.13rem] bg-[#494DA2] text-white sm1:text-[1.2rem] 2xl:text-[1.3125rem] 4xl:text-[2rem] 2xl:p-1 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Continue</button>
