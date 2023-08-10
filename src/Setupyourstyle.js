@@ -175,7 +175,7 @@ return (
             {/* //added className  */}
             <Field type="checkbox" name="terms" />
                 
-                <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[rgb(72,79,162)] 4xl:text-base">
+                <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[rgb(72,79,162)] 4xl:text-sm">
                   Terms & Conditions *
                 </label>
 
@@ -189,7 +189,7 @@ return (
           <div className='flex mt-[0.8rem] md:mt-2 '>
           <Field type="checkbox" name="promomsg"  />
 
-                <label className="sm1:tracking-tighter  sm1:text-left ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[#484FA2] 4xl:text-base  4xl:mt-1">
+                <label className="sm1:tracking-tighter  sm1:text-left ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[#484FA2] 4xl:text-sm  4xl:mt-1">
                 Get Promotional messages through whatsapp 
                 </label>
 {/* //sm1 tracking and textleft added */}
