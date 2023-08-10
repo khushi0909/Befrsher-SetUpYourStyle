@@ -170,7 +170,7 @@ return (
                 />
           </div>
 
-          <div className='flex md:flex-col mt-[0.8rem] md:mt-2'>
+          <div className='flex md:flex-col mt-[0.8rem] md:mt-2 4xl:mt-1'>
             <div className="flex mt-[0.8rem] md:mt-2"> 
             {/* //added className  */}
             <Field type="checkbox" name="terms" />
@@ -189,14 +189,14 @@ return (
           <div className='flex mt-[0.8rem] md:mt-2 '>
           <Field type="checkbox" name="promomsg"  />
 
-                <label className="sm1:tracking-tighter  sm1:text-left ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[#484FA2] 4xl:text-lg ">
+                <label className="sm1:tracking-tighter  sm1:text-left ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[#484FA2] 4xl:text-lg  4xl:mt-1">
                 Get Promotional messages through whatsapp 
                 </label>
 {/* //sm1 tracking and textleft added */}
           </div>
 
           <button type="submit" className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full  mt-[0.8rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem]  bg-[#494DA2] text-white sm1:text-[1.2rem] 4xl:text-[1.3125rem]  2xl:p-1 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Continue</button>
-          <button type='button' className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full 2xl:p-1 2xl:mt-[0.69rem] 4xl:mt-6   4xl:max-w-full w-full 2xl:max-h-[3.13rem]  rounded-[2.5rem] bg-[#494DA2] text-white 4xl:text-[1.3125rem] sm1:text-[1.2rem]  4xl:p-6 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
+          <button type='button' className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full 2xl:p-1 2xl:mt-[0.69rem] 4xl:mt-3 4xl:mb-2   4xl:max-w-full w-full 2xl:max-h-[3.13rem]  rounded-[2.5rem] bg-[#494DA2] text-white 4xl:text-[1.3125rem] sm1:text-[1.2rem]  4xl:p-6 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
 
       </Form>
 
