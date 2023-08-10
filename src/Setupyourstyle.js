@@ -151,13 +151,13 @@ return (
                   <ErrorMessage name='city' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
                   </div>
                   <div className='flex flex-col '>
-                  <Field className="max-h-[3.125rem]  md:mt-1 sm:mt-[0.8rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem] 2xl:max-w-[10rem]  2xl:max-h-[2.125rem]  py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="number" id="area" name="area" placeholder="Pincode *" />
+                  <Field className="4xl:max-h-[3.125rem]  md:mt-1 sm:mt-[0.8rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem] 2xl:max-w-[10rem]  2xl:max-h-[2.125rem]  py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="number" id="area" name="area" placeholder="Pincode *" />
                             <ErrorMessage name='area' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
                   </div>
           </div>
 
           <div className='flex flex-col mt-[0.8rem] md:mt-5'>
-                <Field className="max-h-[3.125rem] text-[#8a8aa8]  border-[0.06rem] border-[#8a8a8a] lg:max-w-full 4xl:max-w-full  2xl:max-h-[2.125rem] 4xl:max-h-[4.125rem] w-full py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="whatsappnum" name="whatsappnum" placeholder="Whatsapp &#10; number *" />
+                <Field className="4xl:max-h-[3.125rem] text-[#8a8aa8]  border-[0.06rem] border-[#8a8a8a] lg:max-w-full 4xl:max-w-full  2xl:max-h-[2.125rem]  w-full py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="whatsappnum" name="whatsappnum" placeholder="Whatsapp &#10; number *" />
                 <ErrorMessage name='whatsappnum' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
           </div>
 
