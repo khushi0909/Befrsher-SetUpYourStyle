@@ -58,7 +58,7 @@ const validationSchema = Yup.object({
       dob:Yup.string().required("Required")
 ,
       city:Yup.string().required("Required"),
-      area:Yup.string().test('len', 'picode must be 6 digit', val => val && val.toString().length === 6 ),
+      area:Yup.string().test('len', 'pincode must be 6 digit', val => val && val.toString().length === 6 ),
       whatsappnum:Yup.string()
       .matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
       ,  'Phone number is not valid').min(10,'number must be atleast 10 digit').required(),
@@ -170,7 +170,7 @@ return (
                 />
           </div>
 
-          <div className='flex md:flex-col mt-[0.8rem] md:mt-2 4xl:mt-1'>
+          <div className='flex md:flex-col mt-[0.8rem] md:mt-2 4xl:mt-1 '>
             <div className="flex mt-[0.8rem] md:mt-2"> 
             {/* //added className  */}
             <Field type="checkbox" name="terms" />
@@ -181,7 +181,7 @@ return (
 
             </div>
           
-          <ErrorMessage component="div" className="text-red-500 2xl:text-xs italic ml-2 4xl:text-xs" name='terms' />
+          <ErrorMessage component="div" className="flex items-end border-2 border-green-200 text-red-500 2xl:text-xs italic ml-2 4xl:text-xs" name='terms' />
 
           </div>
 
