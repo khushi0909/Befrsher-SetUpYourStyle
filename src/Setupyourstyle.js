@@ -58,7 +58,7 @@ const validationSchema = Yup.object({
       dob:Yup.string().required("Required")
 ,
       city:Yup.string().required("Required"),
-      area:Yup.String().test('len', 'picode must be 6 digit', val => val && val.toString().length === 6 ),
+      area:Yup.string().test('len', 'picode must be 6 digit', val => val && val.toString().length === 6 ),
       whatsappnum:Yup.string()
       .matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
       ,  'Phone number is not valid').min(10,'number must be atleast 10 digit').required(),
@@ -95,7 +95,7 @@ return (
   initialValues={initialValues}
   validationSchema = {validationSchema}
   onSubmit = {onSubmit}>  
-      <Form  className="  xl:border-green-800 md:border-black  lg:border-yellow-500  2xl:border-red-700  4xl:border-blue-400 4xl:border-6 border-8  px-5 xl:px-4 xl:mx-4 lg:mx-1 2xl:ml-[3.5rem] 4xl:ml-[5rem] sm:w-full lg:max-w-full 2xl:max-w-[28.25rem] 4xl:max-w-full  4xl:w-[68rem] 4xl:max-h-screen ">
+      <Form  className="px-5 xl:px-4 xl:mx-4 lg:mx-1 2xl:ml-[3.5rem] 4xl:ml-[5rem] sm:w-full lg:max-w-full 2xl:max-w-[28.25rem] 4xl:max-w-full  4xl:w-[68rem] 4xl:max-h-screen ">
 
     
           <div className='flex justify-center items-center '>
