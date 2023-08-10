@@ -106,11 +106,11 @@ return (
 
           <div className='flex flex-col mt-[0.8rem]'>
                       <Field className="border-[1px] max-h-[3.125rem] border-[#8a8a8a] sm:max-w-full  4xl:max-w-full  2xl:max-h-[2.125rem]  py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base" type="text" id="fashionid" name="fashionid" placeholder="Fashion ID" />
-                      <ErrorMessage name='fashionid' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
+                      <ErrorMessage name='fashionid' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-sm"/>
           </div>
 
           <div className='flex flex-col mt-[0.8rem] sm1:mt-4 '>
-                      <Field className=" max-h-[3.125rem] flex justify-center items-center  border-[1px] border-[#8a8a8a]  4xl:max-w-full 2xl:max-h-[2.125rem]     py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem]   4xl:text-[1rem] lg:text-[0.8rem] xl:text-base" onInput={validateDateString} type="text" id="dob" name="dob" placeholder="Date Of Birth *(mm/dd/yyyy)" />
+                      <Field className="4xl:max-h-[3.125rem] flex justify-center items-center  border-[1px] border-[#8a8a8a]  4xl:max-w-full 2xl:max-h-[2.125rem]     py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem]   4xl:text-[1rem] lg:text-[0.8rem] xl:text-base" onInput={validateDateString} type="text" id="dob" name="dob" placeholder="Date Of Birth *(mm/dd/yyyy)" />
                       <ErrorMessage name='dob' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
           </div>
           
@@ -175,7 +175,7 @@ return (
             {/* //added className  */}
             <Field type="checkbox" name="terms" />
                 
-                <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[rgb(72,79,162)] 4xl:text-lg">
+                <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[rgb(72,79,162)] 4xl:text-base">
                   Terms & Conditions *
                 </label>
 
@@ -189,7 +189,7 @@ return (
           <div className='flex mt-[0.8rem] md:mt-2 '>
           <Field type="checkbox" name="promomsg"  />
 
-                <label className="sm1:tracking-tighter  sm1:text-left ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[#484FA2] 4xl:text-lg  4xl:mt-1">
+                <label className="sm1:tracking-tighter  sm1:text-left ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[#484FA2] 4xl:text-base  4xl:mt-1">
                 Get Promotional messages through whatsapp 
                 </label>
 {/* //sm1 tracking and textleft added */}
