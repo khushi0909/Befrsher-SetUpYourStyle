@@ -105,12 +105,12 @@ return (
           
 
           <div className='flex flex-col mt-[0.8rem]'>
-                      <Field className="border-[1px] max-h-[3.125rem] border-[#8a8a8a] sm:max-w-full  4xl:max-w-full  2xl:max-h-[2.125rem] 4xl:max-h-[4.125rem] py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base" type="text" id="fashionid" name="fashionid" placeholder="Fashion ID" />
+                      <Field className="border-[1px] max-h-[3.125rem] border-[#8a8a8a] sm:max-w-full  4xl:max-w-full  2xl:max-h-[2.125rem]  py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base" type="text" id="fashionid" name="fashionid" placeholder="Fashion ID" />
                       <ErrorMessage name='fashionid' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
           </div>
 
           <div className='flex flex-col mt-[0.8rem] sm1:mt-4 '>
-                      <Field className=" max-h-[3.125rem] flex justify-center items-center  border-[1px] border-[#8a8a8a]  4xl:max-w-full 2xl:max-h-[2.125rem]  4xl:max-h-[6.125rem] 4xl:h-full  py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem]  2xl:text-[1rem] lg:text-[0.8rem] xl:text-base" onInput={validateDateString} type="text" id="dob" name="dob" placeholder="Date Of Birth *(mm/dd/yyyy)" />
+                      <Field className=" max-h-[3.125rem] flex justify-center items-center  border-[1px] border-[#8a8a8a]  4xl:max-w-full 2xl:max-h-[2.125rem]     py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem]  2xl:text-[1rem] lg:text-[0.8rem] xl:text-base" onInput={validateDateString} type="text" id="dob" name="dob" placeholder="Date Of Birth *(mm/dd/yyyy)" />
                       <ErrorMessage name='dob' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
           </div>
           
@@ -120,7 +120,7 @@ return (
                <p className='text-[#8a8a8a] 2xl:text-[1rem] font-medium leading-4 -tracking-tight 4xl:text-[1.8rem] 2xl:mb-1 4xl:mb-2 text-left'>Gender *</p>
                 <div className="flex  4xl:justify-between 4xl:gap-8 md:gap-2 4xl:items-center  mt-[0.2rem] ">
                             <button type="button"
-                              className=' flex justify-center items-center lg:w-[18rem] md:mt-1 4xl:text-[1.5rem] 4xl:py-[1.3rem] 4xl:px-[2rem]  lg:px-2 2xl:max-w-full md:w-full   4xl:max-w-[18rem] max-h-[15.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[.5rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
+                              className=' flex justify-center items-center lg:w-[18rem] md:mt-1 4xl:text-[1.5rem] 4xl:py-[1.3rem] 4xl:px-[2rem]  lg:px-2 2xl:max-w-full md:w-full   4xl:max-w-[18rem]  border-[#8a8a8a] border-[0.06rem] 2xl:py-[.5rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
                               name="Male"
                               onClick={(event) => handleClick(event, "Male")}
                             >
@@ -128,7 +128,7 @@ return (
                             </button> 
 
                              <button type="button"
-                              className= 'lg:px-2 md:w-full flex justify-center lg:w-[18rem] items-center md:mt-1 4xl:text-[1.5rem] 4xl:py-[1.3rem] 4xl:px-[2rem]   2xl:max-w-full 4xl:max-w-[18rem] max-h-[55.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[0.5rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
+                              className= 'lg:px-2 md:w-full flex justify-center lg:w-[18rem] items-center md:mt-1 4xl:text-[1.5rem] 4xl:py-[1.3rem] 4xl:px-[2rem]   2xl:max-w-full 4xl:max-w-[18rem]  border-[#8a8a8a] border-[0.06rem] 2xl:py-[0.5rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
 
                               name="Female"
                             >
@@ -147,11 +147,11 @@ return (
           
           <div className='flex 4xl:flex-row 4xl:justify-between  md:flex-col mt-[0.8rem] md:mt-5'>
                   <div className='flex flex-col   '>
-                  <Field className="max-h-[3.125rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem]  2xl:max-w-[10rem] 2xl:max-h-[2.125rem] 4xl:max-h-[4.125rem] py-[1.03rem]  pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="city" name="city" placeholder="City *" />
+                  <Field className="max-h-[3.125rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem]  2xl:max-w-[10rem] 2xl:max-h-[2.125rem]  py-[1.03rem]  pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="city" name="city" placeholder="City *" />
                   <ErrorMessage name='city' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
                   </div>
                   <div className='flex flex-col '>
-                  <Field className="max-h-[3.125rem]  md:mt-1 sm:mt-[0.8rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem] 2xl:max-w-[10rem]  2xl:max-h-[2.125rem] 4xl:max-h-[4.125rem] py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="number" id="area" name="area" placeholder="Pincode *" />
+                  <Field className="max-h-[3.125rem]  md:mt-1 sm:mt-[0.8rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem] 2xl:max-w-[10rem]  2xl:max-h-[2.125rem]  py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="number" id="area" name="area" placeholder="Pincode *" />
                             <ErrorMessage name='area' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
                   </div>
           </div>
@@ -195,8 +195,8 @@ return (
 {/* //sm1 tracking and textleft added */}
           </div>
 
-          <button type="submit" className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full  mt-[0.8rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem] 4xl:max-h-[6.13rem] bg-[#494DA2] text-white sm1:text-[1.2rem] 2xl:text-[1.3125rem] 4xl:text-[2rem] 2xl:p-1 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Continue</button>
-          <button type='button' className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full 2xl:p-1 2xl:mt-[0.69rem] 4xl:mt-6   4xl:max-w-full w-full 2xl:max-h-[3.13rem] 4xl:max-h-[6.13rem] rounded-[2.5rem] bg-[#494DA2] text-white 2xl:text-[1.3125rem] sm1:text-[1.2rem] 4xl:text-[2rem] 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
+          <button type="submit" className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full  mt-[0.8rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem]  bg-[#494DA2] text-white sm1:text-[1.2rem] 2xl:text-[1.3125rem] 4xl:text-[2rem] 2xl:p-1 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Continue</button>
+          <button type='button' className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full 2xl:p-1 2xl:mt-[0.69rem] 4xl:mt-6   4xl:max-w-full w-full 2xl:max-h-[3.13rem]  rounded-[2.5rem] bg-[#494DA2] text-white 2xl:text-[1.3125rem] sm1:text-[1.2rem] 4xl:text-[2rem] 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
 
       </Form>
 
