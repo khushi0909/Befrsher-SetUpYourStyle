@@ -58,7 +58,7 @@ const validationSchema = Yup.object({
       dob:Yup.string().required("Required")
 ,
       city:Yup.string().required("Required"),
-      area:Yup.string().test('len', 'pincode must be 6 digit', val => val && val.toString().length === 6 ),
+      area:Yup.string().required().matches(/^[0-9]+$/, "Must be only digits").min(6, 'Must be exactly 6 digits').max(6, 'Must be exactly 6 digits'),
       whatsappnum:Yup.string()
       .matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
       ,  'Phone number is not valid').min(10,'number must be atleast 10 digit').required(),
@@ -195,8 +195,8 @@ return (
 {/* //sm1 tracking and textleft added */}
           </div>
 
-          <button type="submit" className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full  mt-[0.8rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem]  bg-[#494DA2] text-white sm1:text-[1.2rem] 4xl:text-[1.3125rem]  2xl:p-1 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Continue</button>
-          <button type='button' className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full 2xl:p-1 2xl:mt-[0.69rem] 4xl:mt-3 4xl:mb-2   4xl:max-w-full w-full 2xl:max-h-[3.13rem]  rounded-[2.5rem] bg-[#494DA2] text-white 4xl:text-[1.3125rem] sm1:text-[1.2rem]  4xl:p-6 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
+          <button type="submit" className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full  mt-[0.8rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem]  bg-[#494DA2] text-white sm1:text-[1.2rem] 4xl:text-[1.25rem]  2xl:p-1 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Continue</button>
+          <button type='button' className=' max-h-[3.125rem] flex justify-center items-center sm:max-w-full 2xl:p-1 2xl:mt-[0.69rem] 4xl:mt-3 4xl:mb-2   4xl:max-w-full w-full 2xl:max-h-[3.13rem]  rounded-[2.5rem] bg-[#494DA2] text-white 4xl:text-[1.25rem] sm1:text-[1.2rem]  4xl:p-6 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
 
       </Form>
 
