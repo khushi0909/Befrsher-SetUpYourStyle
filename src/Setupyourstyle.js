@@ -120,7 +120,7 @@ return (
                <p className='text-[#8a8a8a] 4xl:text-[1rem] font-medium leading-4 -tracking-tight 2xl:mb-1 4xl:mb-2 text-left'>Gender *</p>
                 <div className="flex  4xl:justify-between 4xl:gap-8 md:gap-2 4xl:items-center  mt-[0.2rem] ">
                             <button type="button"
-                              className=' flex justify-center items-center lg:w-[18rem] md:mt-1  4xl:py-[1.3rem] 4xl:px-[2rem]  lg:px-2 2xl:max-w-full md:w-full   4xl:max-w-[18rem]  border-[#8a8a8a] border-[0.06rem] 2xl:py-[.5rem] px-[2.63rem] 4xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
+                              className=' flex justify-center items-center lg:w-[18rem] md:mt-1  4xl:py-[0.9rem] 4xl:px-[2rem]  lg:px-2 2xl:max-w-full md:w-full   4xl:max-w-[18rem]  border-[#8a8a8a] border-[0.06rem] 2xl:py-[.5rem] px-[2.63rem] 4xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
                               name="Male"
                               onClick={(event) => handleClick(event, "Male")}
                             >
@@ -128,14 +128,14 @@ return (
                             </button> 
 
                              <button type="button"
-                              className= 'lg:px-2 md:w-full flex justify-center lg:w-[18rem] items-center md:mt-1 4xl:py-[1.3rem] 4xl:px-[2rem]   2xl:max-w-full 4xl:max-w-[18rem]  border-[#8a8a8a] border-[0.06rem] 2xl:py-[0.5rem] px-[2.63rem] 4xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
+                              className= 'lg:px-2 md:w-full flex justify-center lg:w-[18rem] items-center md:mt-1 4xl:py-[0.9rem] 4xl:px-[2rem]   2xl:max-w-full 4xl:max-w-[18rem]  border-[#8a8a8a] border-[0.06rem] 2xl:py-[0.5rem] px-[2.63rem] 4xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
 
                               name="Female"
                             >
                               Female
                             </button>
                              <button type="button"
-                              className='md:w-full 4x:max-h-[4.125rem]  flex justify-center lg:w-[18rem] items-center md:mt-1  4xl:py-[1.3rem] 4xl:px-[2rem]  lg:px-2 2xl:max-w-full  4xl:max-w-[18rem] max-h-[55.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[0.5rem] px-[2.63rem] 4xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem] '
+                              className='md:w-full 4x:max-h-[4.125rem]  flex justify-center lg:w-[18rem] items-center md:mt-1  4xl:py-[0.9rem] 4xl:px-[2rem]  lg:px-2 2xl:max-w-full  4xl:max-w-[18rem] max-h-[55.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[0.5rem] px-[2.63rem] 4xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem] '
                               name="Special"
                             >
                               Special
@@ -147,7 +147,7 @@ return (
           
           <div className='flex 4xl:flex-row 4xl:justify-between  md:flex-col mt-[0.8rem] md:mt-5'>
                   <div className='flex flex-col   '>
-                  <Field className="max-h-[3.125rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem]  2xl:max-w-[10rem] 2xl:max-h-[2.125rem]  py-[1.03rem]  pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="city" name="city" placeholder="City *" />
+                  <Field className="4xl:max-h-[3.125rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem]  2xl:max-w-[10rem] 2xl:max-h-[2.125rem]  py-[1.03rem]  pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="city" name="city" placeholder="City *" />
                   <ErrorMessage name='city' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
                   </div>
                   <div className='flex flex-col '>
