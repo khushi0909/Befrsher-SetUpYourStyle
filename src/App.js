@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import Setupyourstyle from './Setupyourstyle'
+import DummyHeader from './DummyHeader'
 
 function App() {
   return (
     <div className="App">
+      <DummyHeader/>
      <Setupyourstyle/>
     
     </div>

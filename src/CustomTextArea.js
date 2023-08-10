@@ -10,7 +10,7 @@ import { useField } from "formik";
         return (
             <>
                 <label htmlFor={props.id || props.name}>{label}</label>
-                <textarea className="border-[0.06rem] rounded-[0.3125rem] border-[#8a8a8a] pl-[1.56rem] pt-[0.63rem]" {...field} {...props} />
+                <textarea className=" max-h-[3.125rem] border-[0.06rem] rounded-[0.3125rem] border-[#8a8a8a] pl-[1.56rem] pt-[0.63rem]" {...field} {...props} />
                 {meta.touched && meta.error ? (
                     <div className="error">{meta.error}</div>
                 ) : null}
