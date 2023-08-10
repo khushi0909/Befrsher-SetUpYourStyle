@@ -58,7 +58,7 @@ const validationSchema = Yup.object({
       dob:Yup.string().required("Required")
 ,
       city:Yup.string().required("Required"),
-      area:Yup.number().test('len', 'picode must be 6 digit', val => val && val.toString().length === 6 ),
+      area:Yup.String().test('len', 'picode must be 6 digit', val => val && val.toString().length === 6 ),
       whatsappnum:Yup.string()
       .matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
       ,  'Phone number is not valid').min(10,'number must be atleast 10 digit').required(),
@@ -111,7 +111,7 @@ return (
 
           <div className='flex flex-col mt-[0.8rem] sm1:mt-4 '>
                       <Field className="4xl:max-h-[3.125rem] flex justify-center items-center  border-[1px] border-[#8a8a8a]  4xl:max-w-full 2xl:max-h-[2.125rem]     py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem]   4xl:text-[1rem] lg:text-[0.8rem] xl:text-base" onInput={validateDateString} type="text" id="dob" name="dob" placeholder="Date Of Birth *(mm/dd/yyyy)" />
-                      <ErrorMessage name='dob' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
+                      <ErrorMessage name='dob' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-sm"/>
           </div>
           
        
@@ -148,17 +148,17 @@ return (
           <div className='flex 4xl:flex-row 4xl:justify-between  md:flex-col mt-[0.8rem] md:mt-5'>
                   <div className='flex flex-col   '>
                   <Field className="4xl:max-h-[3.125rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem]  2xl:max-w-[10rem] 2xl:max-h-[2.125rem]  py-[1.03rem]  pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="city" name="city" placeholder="City *" />
-                  <ErrorMessage name='city' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
+                  <ErrorMessage name='city' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-sm"/>
                   </div>
                   <div className='flex flex-col '>
-                  <Field className="4xl:max-h-[3.125rem]  md:mt-1 sm:mt-[0.8rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem] 2xl:max-w-[10rem]  2xl:max-h-[2.125rem]  py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="number" id="area" name="area" placeholder="Pincode *" />
-                            <ErrorMessage name='area' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
+                  <Field className="4xl:max-h-[3.125rem]  md:mt-1 sm:mt-[0.8rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem] 2xl:max-w-[10rem]  2xl:max-h-[2.125rem]  py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="area" name="area" placeholder="Pincode *" />
+                            <ErrorMessage name='area' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-sm"/>
                   </div>
           </div>
 
           <div className='flex flex-col mt-[0.8rem] md:mt-5'>
                 <Field className="4xl:max-h-[3.125rem] text-[#8a8aa8]  border-[0.06rem] border-[#8a8a8a] lg:max-w-full 4xl:max-w-full  2xl:max-h-[2.125rem]  w-full py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem]  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="whatsappnum" name="whatsappnum" placeholder="Whatsapp &#10; number *" />
-                <ErrorMessage name='whatsappnum' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
+                <ErrorMessage name='whatsappnum' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-sm"/>
           </div>
 
           <div className='flex flex-col mt-[0.8rem] md:mt-5 4xl:max-w-full  4xl:text-[1rem] lg:text-[0.8rem] xl:text-base'>
@@ -181,7 +181,7 @@ return (
 
             </div>
           
-          <ErrorMessage component="div" className="text-red-500 2xl:text-xs italic ml-2 4xl:text-lg" name='terms' />
+          <ErrorMessage component="div" className="text-red-500 2xl:text-xs italic ml-2 4xl:text-xs" name='terms' />
 
           </div>
 
